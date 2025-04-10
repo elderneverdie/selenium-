@@ -28,7 +28,7 @@ def test_upload(driver):
     with allure.step("打开 PIM 模块"):
         pim_page.open_pim_module()
 
-    file_path = r'C:\Users\Ricky\Desktop\picture\avatar.jpg'
+    file_path = r'avatar.jpg'
     first_name = "Atest"
     middle_name = "Btest"
     last_name = "Ctest"
