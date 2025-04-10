@@ -42,8 +42,7 @@
     动态表格 XPath
     表单字段断言
 
-三、代码结构:
-  /tests  
+三、代码结构:  
   /pages  
     LoginPage.py  
     PIMPage.py  
