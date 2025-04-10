@@ -12,7 +12,7 @@ def test_user_login_failure(driver):
         login_page = LoginPage(driver)
         login_page.open()
         try:
-            login_page.login("kevins", "kevins123")
+            login_page.login("bcd", "234")
         except TimeoutException:
             pass  # 预期中的异常
 
@@ -27,7 +27,7 @@ def test_admin_login_success(driver):
     with allure.step("1. 使用有效管理员凭证登录"):
         login_page = LoginPage(driver)
         login_page.open()
-        login_page.login("Admin", "admin123")
+        login_page.login("abc", "123")
 
     with allure.step("2. 验证登录成功后跳转到主页"):
         assert "dashboard/index" in driver.current_url.lower()
